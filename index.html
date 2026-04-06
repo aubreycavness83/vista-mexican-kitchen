@@ -1,0 +1,928 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vista Mexican Kitchen – Authentic Mexican cuisine with fresh ingredients, handcrafted flavors, and bold Southwest inspiration. Reserve your table today.">
+    <title>Vista Mexican Kitchen | Authentic Mexican Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css?v=7">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Webclip (Apple Touch Icon) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/webclip.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vista Mexican Kitchen">
+    <meta property="og:description"
+        content="Authentic Mexican cuisine with fresh ingredients and handcrafted flavors. Reserve your table today.">
+    <meta property="og:image" content="images/open-graph.webp">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════
+       SITE HEADER / PRIMARY NAVIGATION
+  ═══════════════════════════════════════════════════════ -->
+    <header class="site-header" id="top">
+        <nav class="nav" aria-label="Main navigation">
+
+            <a href="./" class="nav__brand" aria-label="Vista Mexican Kitchen — back to top">
+                <img src="images/vista-mexican-kitchen-logo.png" alt="">
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+            <ul class="nav__menu" id="nav-menu" role="list">
+                <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#specials" class="nav__link">Chef Specials</a></li>
+                <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                <li class="nav__item"><a href="#happy-hour" class="nav__link">Happy Hour</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="#reservations" class="nav__link nav__link--cta">Reserve a Table</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════ -->
+        <section class="hero" id="hero"
+            aria-label="Vista Mexican Kitchen - Modern Mexican Dining Experience in Phoenix">
+            <video class="hero__video" aria-hidden="true" autoplay muted loop playsinline>
+                <source src="hero-taco-lime.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay" aria-hidden="true"></div>
+
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Vista Mexican Kitchen
+                </h1>
+                <p class="hero__subtitle">Where every plate tells the story</p>
+            </div>
+
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+         ABOUT / OUR STORY
+    ═══════════════════════════════════════════════════════ -->
+        <section class="container about" id="about" aria-labelledby="about-heading">
+
+            <figure class="about__figure">
+                <img src="images/about-tacos.webp"
+                    alt="Three Tacos de Camarón with crispy Pacific shrimp and lime-cilantro slaw at Vista Mexican Kitchen"
+                    class="about__image" loading="lazy">
+            </figure>
+
+            <div class="about__body">
+                <h2 class="about__heading" id="about-heading">
+                    The Art Of The Handmade
+                </h2>
+                <span class="about__subtitle">A Fresh Perspective On Traditional Flavors</span>
+                <p class="about__text">
+                    Our story is defined by a deep respect for the traditions that shape the Southwest. At Vista Mexican
+                    Kitchen, we believe the best flavors are found in the details—from spices ground by hand to the
+                    bright, hand-pressed citrus that defines our signature dishes.
+                </p>
+                <p class="about__text">
+                    Inspired by the vibrant culture of the Valley, we bring a refined perspective to time-tested
+                    favorites. By pairing local Arizona freshness with artisanal techniques, we ensure that every plate
+                    serves as a tribute to the craft of the kitchen and the spirit of Phoenix.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+         CHEF SPECIALS
+    ═══════════════════════════════════════════════════════ -->
+        <section class="specials" id="specials" aria-labelledby="specials-heading">
+            <div class="container">
+                <header class="specials_header">
+                    <h2 class="specials__title" id="specials-heading">Chef's Specials</h2>
+                    <p class="specials__subtitle">
+                        Refined Mexican cuisine for everyone
+                    </p>
+                </header>
+
+                <ul class="specials__grid" role="list">
+
+                    <li class="special-card special-card--featured">
+                        <figure class="special-card__figure">
+                            <img src="images/specials-chiles.webp"
+                                alt="Traditional Chiles en Nogada topped with walnut cream sauce, pomegranate seeds, and fresh parsley"
+                                class="special-card__image" width="540" height="360" loading="lazy">
+                            <span class="special-card__badge">Signature</span>
+                        </figure>
+                        <div class="special-card__body">
+                            <div class="special-card__meta">
+                                <h3 class="special-card__name">Chiles en Nogada</h3>
+                                <span class="special-card__price">$30</span>
+                            </div>
+                            <p class="special-card__desc">
+                                A roasted poblano pepper stuffed with a savory-sweet blend of shredded pork, dried
+                                fruits, and local pecans. Draped in a velvety walnut cream sauce and finished with fresh
+                                pomegranate seeds, aromatic parsley, and a hint of spice.
+                            </p>
+                            <ul class="special-card__tags" role="list" aria-label="Dish notes">
+                                <li class="special-card__tag">SEASONAL FAVORITE</li>
+                                <li class="special-card__tag">VEGETARIAN OPTION</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="special-card">
+                        <figure class="special-card__figure">
+                            <img src="images/specials-sopes.webp"
+                                alt="Three hand-pressed masa sopes topped with Al Pastor pork, pickled onions, and crumbled queso fresco"
+                                class="special-card__image" width="540" height="360" loading="lazy">
+                            <span class="special-card__badge">Seasonal</span>
+                        </figure>
+                        <div class="special-card__body">
+                            <div class="special-card__meta">
+                                <h3 class="special-card__name">Al Pastor Sopes</h3>
+                                <span class="special-card__price">$26</span>
+                            </div>
+                            <p class="special-card__desc">
+                                Three hand-pressed masa cakes topped with tender, achiote-marinated pork and creamy goat
+                                cheese. Finished with vibrant pickled red onions, fresh cilantro, a dusting of cracked
+                                black pepper, and a side of house-made salsa verde.
+                            </p>
+                            <ul class="special-card__tags" role="list" aria-label="Dish notes">
+                                <li class="special-card__tag">SIGNATURE RECIPE</li>
+                                <li class="special-card__tag">HAND-PRESSED</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="special-card">
+                        <figure class="special-card__figure">
+                            <img src="images/specials-enchiladas.webp"
+                                alt="A trio of Enchiladas Suizas baked with creamy salsa verde and topped with fresh tomato and crema"
+                                class="special-card__image" width="540" height="360" loading="lazy">
+                            <span class="special-card__badge">Weekend Only</span>
+                        </figure>
+                        <div class="special-card__body">
+                            <div class="special-card__meta">
+                                <h3 class="special-card__name">Enchiladas Suizas</h3>
+                                <span class="special-card__price">$24</span>
+                            </div>
+                            <p class="special-card__desc">
+                                Three hand-rolled tortillas filled with a savory picadillo of premium beef and melted
+                                artisanal cheese. Draped in a velvety crema sauce and finished with fresh pico de gallo
+                                and hand-torn cilantro.
+                            </p>
+                            <ul class="special-card__tags" role="list" aria-label="Dish notes">
+                                <li class="special-card__tag">TRADITIONAL CRAFT</li>
+                                <li class="special-card__tag">HOUSE FAVORITE</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+         FULL MENU
+    ═══════════════════════════════════════════════════════ -->
+        <section class="menu" id="menu" aria-labelledby="menu-heading">
+            <div class="container">
+
+                <header class="specials-header">
+                    <h2 class="menu-header__title" id="menu-heading">Our Menu</h2>
+                    <p class="menu-header__subtitle">
+                        Authentic recipes made fresh every day
+                    </p>
+                </header>
+
+                <!-- Tab bar -->
+                <div class="menu__tabs" role="tablist" aria-label="Menu categories">
+                    <button class="menu__tab menu__tab--active" role="tab" aria-selected="true"
+                        aria-controls="tab-starters" id="btn-starters">Starters</button>
+                    <button class="menu__tab" role="tab" aria-selected="false" aria-controls="tab-tacos"
+                        id="btn-tacos">Tacos</button>
+                    <button class="menu__tab" role="tab" aria-selected="false" aria-controls="tab-entrees"
+                        id="btn-entrees">Entrées</button>
+                    <button class="menu__tab" role="tab" aria-selected="false" aria-controls="tab-desserts"
+                        id="btn-desserts">Desserts</button>
+                    <button class="menu__tab" role="tab" aria-selected="false" aria-controls="tab-drinks"
+                        id="btn-drinks">Drinks</button>
+                </div>
+
+                <!-- STARTERS -->
+                <div class="menu__panel" id="tab-starters" role="tabpanel" aria-labelledby="btn-starters">
+                    <div class="menu__panel-layout">
+                        <ul class="menu__grid" role="list">
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Guacamole Fresco</h3>
+                                    <p class="menu-item__desc">Hass avocados, fresh lime, jalapeño, and sea salt. Mixed
+                                        with crisp onion, tomato, and cilantro. Made tableside.</p>
+                                </div>
+                                <span class="menu-item__price">$14</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Queso Fundido</h3>
+                                    <p class="menu-item__desc">Melted Oaxacan cheese with chorizo and roasted poblano
+                                        strips. Served with warm tortillas.</p>
+                                </div>
+                                <span class="menu-item__price">$16</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Elote en Vaso</h3>
+                                    <p class="menu-item__desc">Mexican street corn — roasted kernels, cotija, lime
+                                        crema,
+                                        chili powder, and cilantro.</p>
+                                </div>
+                                <span class="menu-item__price">$8</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Sopa de Tortilla</h3>
+                                    <p class="menu-item__desc">Rich ancho-tomato broth with crispy tortilla strips,
+                                        avocado,
+                                        and crema. Vegetarian.</p>
+                                </div>
+                                <span class="menu-item__price">$10</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Ceviche de Camarón</h3>
+                                    <p class="menu-item__desc">Citrus-cured shrimp with cucumber, serrano, red onion,
+                                        and
+                                        mango. Served with plantain chips.</p>
+                                </div>
+                                <span class="menu-item__price">$16</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Tostadas de Tinga</h3>
+                                    <p class="menu-item__desc">Crispy corn tostadas topped with chipotle chicken, black
+                                        beans, and pickled jalapeños.</p>
+                                </div>
+                                <span class="menu-item__price">$12</span>
+                            </li>
+
+                        </ul>
+                        <figure class="menu__panel-figure">
+                            <img src="images/menu-guacamole.webp"
+                                alt="Fresh Guacamole Fresco topped with cilantro and served with crispy tortilla chips"
+                                class="menu__panel-image" width="480" height="560" loading="lazy">
+                            <p class="menu-text">Guacamole Fresco</p>
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- TACOS -->
+                <div class="menu__panel menu__panel--hidden" id="tab-tacos" role="tabpanel" aria-labelledby="btn-tacos">
+                    <div class="menu__panel-layout">
+                        <ul class="menu__grid" role="list">
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Tacos de Camarón <span
+                                            class="menu-item__count">(3)</span></h3>
+                                    <p class="menu-item__desc">Crispy Pacific shrimp, lime-cilantro slaw, avocado crema,
+                                        and pickled red onions on hand-pressed corn tortillas.</p>
+                                </div>
+                                <span class="menu-item__price">$22</span>
+                            </li>
+
+                            <li class="menu-item menu-item--popular">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Birria de Res <span class="menu-item__count">(3)</span>
+                                    </h3>
+                                    <p class="menu-item__desc">Braised beef in dried-chile consommé, melted Oaxacan
+                                        cheese,
+                                        dipped and griddle-seared. Served with consommé for dipping.</p>
+                                </div>
+                                <span class="menu-item__price">$22</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Tinga de Pollo <span class="menu-item__count">(3)</span>
+                                    </h3>
+                                    <p class="menu-item__desc">Shredded chicken braised in chipotle-tomato sauce, topped
+                                        with avocado crema and pickled cabbage.</p>
+                                </div>
+                                <span class="menu-item__price">$18</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Tacos de Pescado <span
+                                            class="menu-item__count">(3)</span>
+                                    </h3>
+                                    <p class="menu-item__desc">Beer-battered mahi-mahi, chipotle aioli, shredded
+                                        cabbage,
+                                        and pico de gallo. Baja style.</p>
+                                </div>
+                                <span class="menu-item__price">$21</span>
+                            </li>
+
+                            <li class="menu-item menu-item--popular">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Al Pastor <span class="menu-item__count">(3)</span></h3>
+                                    <p class="menu-item__desc">Achiote-marinated pork shaved from the trompo, grilled
+                                        pineapple, white onion, and cilantro.</p>
+                                </div>
+                                <span class="menu-item__price">$19</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Barbacoa de Borrego <span
+                                            class="menu-item__count">(3)</span></h3>
+                                    <p class="menu-item__desc">Slow-steamed lamb in agave leaf with chile pasilla,
+                                        served
+                                        with guajillo salsa and diced onion.</p>
+                                </div>
+                                <span class="menu-item__price">$24</span>
+                            </li>
+
+                        </ul>
+                        <figure class="menu__panel-figure">
+                            <img src="images/menu-birria-tacos.webp"
+                                alt="Four slow-cooked Birria tacos served with a side of rich consommé for dipping"
+                                class="menu__panel-image" width="480" height="560" loading="lazy">
+                            <p class="menu-text">Birria de Res</p>
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- ENTRÉES -->
+                <div class="menu__panel menu__panel--hidden" id="tab-entrees" role="tabpanel"
+                    aria-labelledby="btn-entrees">
+                    <div class="menu__panel-layout">
+                        <ul class="menu__grid" role="list">
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Enchiladas Verdes</h3>
+                                    <p class="menu-item__desc">Corn tortillas filled with poached chicken, smothered in
+                                        roasted tomatillo-serrano salsa, crema, and cotija.</p>
+                                </div>
+                                <span class="menu-item__price">$22</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Chiles Rellenos</h3>
+                                    <p class="menu-item__desc">Poblano chiles stuffed with picadillo and Chihuahua
+                                        cheese, egg-battered, fried, served over roasted tomato caldillo.</p>
+                                </div>
+                                <span class="menu-item__price">$24</span>
+                            </li>
+
+                            <li class="menu-item menu-item--popular">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Mole Poblano con Pollo</h3>
+                                    <p class="menu-item__desc">Free-range chicken in dark mole with mulato, ancho, and
+                                        chihuacle chiles, dark chocolate, and sesame. Served with Mexican rice and black
+                                        beans.</p>
+                                </div>
+                                <span class="menu-item__price">$28</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Carne Asada</h3>
+                                    <p class="menu-item__desc">Grilled skirt steak marinated in citrus, garlic, and
+                                        dried
+                                        chiles. Served with nopales salad, guacamole, and tortillas.</p>
+                                </div>
+                                <span class="menu-item__price">$34</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Cochinita Pibil</h3>
+                                    <p class="menu-item__desc">Yucatán slow-roasted pork in achiote and sour orange,
+                                        wrapped
+                                        in banana leaf. Served with habanero salsa and pickled red onions.</p>
+                                </div>
+                                <span class="menu-item__price">$29</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Camarones a la Diabla</h3>
+                                    <p class="menu-item__desc">Jumbo Gulf shrimp in a fiery sauce of árbol, guajillo,
+                                        and
+                                        morita chiles with charred tomato. Served with cilantro rice.</p>
+                                </div>
+                                <span class="menu-item__price">$31</span>
+                            </li>
+
+                        </ul>
+                        <figure class="menu__panel-figure">
+                            <img src="images/menu-chile-rellenos.webp"
+                                alt="Traditional Chile Relleno topped with fresh crema and crumbled queso fresco in a red sauce"
+                                class="menu__panel-image" width="480" height="560" loading="lazy">
+                            <p class="menu-text">Chiles Rellenos</p>
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- DESSERTS -->
+                <div class="menu__panel menu__panel--hidden" id="tab-desserts" role="tabpanel"
+                    aria-labelledby="btn-desserts">
+                    <div class="menu__panel-layout">
+                        <ul class="menu__grid" role="list">
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Churros con Chocolate</h3>
+                                    <p class="menu-item__desc">Crispy fried dough dusted in cinnamon sugar, served with
+                                        house-made dark chocolate dipping sauce and cajeta.</p>
+                                </div>
+                                <span class="menu-item__price">$11</span>
+                            </li>
+
+                            <li class="menu-item menu-item--popular">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Pastel de Tres Leches</h3>
+                                    <p class="menu-item__desc">Light sponge cake soaked in three milks — whole,
+                                        condensed,
+                                        and evaporated — topped with fresh whipped cream and macerated strawberries.</p>
+                                </div>
+                                <span class="menu-item__price">$12</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Flan de Vainilla</h3>
+                                    <p class="menu-item__desc">Classic silky baked custard with a pool of amber caramel.
+                                        Infused with Mexican vanilla bean.</p>
+                                </div>
+                                <span class="menu-item__price">$10</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Arroz con Leche</h3>
+                                    <p class="menu-item__desc">Creamy rice pudding scented with cinnamon, orange peel,
+                                        and
+                                        vanilla. Served warm or chilled.</p>
+                                </div>
+                                <span class="menu-item__price">$6</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Sorbetes de Fruta</h3>
+                                    <p class="menu-item__desc">A trio of seasonal house-made sorbets (Hibiscus,
+                                        Mango-Chili, and Lime).</p>
+                                </div>
+                                <span class="menu-item__price">$10</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Cheesecake de Guayaba</h3>
+                                    <p class="menu-item__desc">Creamy guava-swirl cheesecake on a Maria cracker crust,
+                                        topped with a mint sprig.</p>
+                                </div>
+                                <span class="menu-item__price">$13</span>
+                            </li>
+
+                        </ul>
+                        <figure class="menu__panel-figure">
+                            <img src="images/menu-flan.webp"
+                                alt="Creamy caramel flan dessert topped with a fresh mint leaf on a white plate"
+                                class="menu__panel-image" width="480" height="560" loading="lazy">
+                            <p class="menu-text">Flan de Vainilla</p>
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- DRINKS -->
+                <div class="menu__panel menu__panel--hidden" id="tab-drinks" role="tabpanel"
+                    aria-labelledby="btn-drinks">
+                    <div class="menu__panel-layout">
+                        <ul class="menu__grid" role="list">
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Margarita Clásica</h3>
+                                    <p class="menu-item__desc">100% agave blanco tequila, fresh lime juice, orange
+                                        liqueur,
+                                        and Himalayan sea salt rim.</p>
+                                </div>
+                                <span class="menu-item__price">$13</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Mezcal Paloma</h3>
+                                    <p class="menu-item__desc">Artisanal mezcal, fresh grapefruit juice, lime, agave
+                                        syrup,
+                                        and a flamed grapefruit garnish.</p>
+                                </div>
+                                <span class="menu-item__price">$15</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Sangria de Vino Tinto</h3>
+                                    <p class="menu-item__desc">House red wine with macerated seasonal fruits, muddled
+                                        orange, cinnamon, star anise, and a splash of brandy.</p>
+                                </div>
+                                <span class="menu-item__price">$12</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Michelada</h3>
+                                    <p class="menu-item__desc">Mexican lager with lime, Worcestershire, hot sauce, and a
+                                        Tajín-rimmed glass.</p>
+                                </div>
+                                <span class="menu-item__price">$12</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Agua de Jamaica</h3>
+                                    <p class="menu-item__desc">House-steeped hibiscus agua fresca with fresh lime.
+                                        Non-alcoholic.</p>
+                                </div>
+                                <span class="menu-item__price">$6</span>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-item__body">
+                                    <h3 class="menu-item__name">Horchata Artesanal</h3>
+                                    <p class="menu-item__desc">Creamy house-made rice and almond milk with cinnamon and
+                                        vanilla. Non-alcoholic.</p>
+                                </div>
+                                <span class="menu-item__price">$6</span>
+                            </li>
+
+                        </ul>
+                        <figure class="menu__panel-figure">
+                            <img src="images/menu-sangria.webp"
+                                alt="A chilled glass of Sangria de Vino Tinto filled with fresh seasonal fruits and ice"
+                                class="menu__panel-image" width="480" height="560" loading="lazy">
+                            <p class="menu-text">Margarita Clásica</p>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+         HAPPY HOUR
+    ═══════════════════════════════════════════════════════ -->
+        <section class="happy-hour" id="happy-hour" aria-labelledby="happy-hour-heading">
+            <div class="container happy-hour__inner">
+
+                <figure class="happy-hour__figure">
+                    <img src="images/happy-hour-background.webp"
+                        alt="Vista Mexican Kitchen Happy Hour menu featuring Tostadas de Tinga and Margarita Clásica."
+                        class="happy-hour__image" width="1000" height="1176" loading="lazy">
+                </figure>
+
+                <div class="happy-hour__body">
+                    <h2 class="happy-hour__heading" id="happy-hour-heading">Boutique Happy Hour</h2>
+                    <span class="happy-hour__subtitle">Daily 3pm &ndash; 6pm</span>
+                    <p class="happy-hour__text">At Vista Mexican Kitchen, our Happy Hour is more than just a transition
+                        from day to night. It is a celebration of the craft. We’ve curated a selection of our most
+                        vibrant starters and hand-shaken cocktails to highlight the bold, authentic flavors of our
+                        kitchen. Whether you’re unwinding with a flame-kissed Mezcal Paloma or sharing a skillet of our
+                        signature queso fundido, we invite you to settle in and experience the perfect escape.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+         GALLERY / LIGHTBOX
+    ═══════════════════════════════════════════════════════ -->
+        <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+            <div class="container">
+
+                <header class="gallery-header">
+                    <h2 class="gallery-header__title" id="gallery-heading">The Vista Experience</h2>
+                    <p class="gallery-header__subtitle">
+                        A curated journey through Mexican cuisine
+                    </p>
+                </header>
+
+                <ul class="gallery__grid" role="list">
+
+                    <li class="gallery__item">
+                        <button class="gallery__trigger" aria-label="View full image: Restaurant interior"
+                            data-img-src="images/gallery-ceviche.webp"
+                            data-img-caption="Ceviche de Camarón is a refreshing mix of chilled shrimp, mango, and plantain.">
+                            <img src="images/gallery-ceviche.webp"
+                                alt="Fresh Ceviche de Camarón served in a glass bowl with crisp plantain chips on the side"
+                                class="gallery__image" width="600" height="400" loading="lazy">
+                            <span class="gallery__overlay" aria-hidden="true">
+                                <span class="gallery__overlay-icon">&#x2922;</span>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li class="gallery__item">
+                        <button class="gallery__trigger" aria-label="View full image: Birria Tacos"
+                            data-img-src="images/gallery-sopa.webp"
+                            data-img-caption="Sopa de Tortilla features a rich tomato broth with crispy tortilla and avocado.">
+                            <img src="images/gallery-sopa.webp"
+                                alt="Overhead view of Sopa de Tortilla with fresh avocado, crema, and crispy tortilla strips"
+                                class="gallery__image" width="600" height="400" loading="lazy">
+                            <span class="gallery__overlay" aria-hidden="true">
+                                <span class="gallery__overlay-icon">&#x2922;</span>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li class="gallery__item">
+                        <button class="gallery__trigger" aria-label="View full image: Mole Negro"
+                            data-img-src="images/gallery-tostadas.webp"
+                            data-img-caption="Tostadas de Tinga are piled high with smoky chipotle chicken and black beans.">
+                            <img src="images/gallery-tostadas.webp"
+                                alt="Two artisanal Tostadas de Tinga topped with shredded chicken, radish, and fresh greens"
+                                class="gallery__image" width="600" height="800" loading="lazy">
+                            <span class="gallery__overlay" aria-hidden="true">
+                                <span class="gallery__overlay-icon">&#x2922;</span>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li class="gallery__item">
+                        <button class="gallery__trigger" aria-label="View full image: Margaritas"
+                            data-img-src="images/gallery-carne.webp"
+                            data-img-caption="Carne Asada is prime skirt steak grilled to perfection with citrus-garlic marinade.">
+                            <img src="images/gallery-carne.webp"
+                                alt="Premium grilled Carne Asada steak served with charred onions and fresh tortillas"
+                                class="gallery__image" width="600" height="400" loading="lazy">
+                            <span class="gallery__overlay" aria-hidden="true">
+                                <span class="gallery__overlay-icon">&#x2922;</span>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li class="gallery__item">
+                        <button class="gallery__trigger" aria-label="View full image: Churros"
+                            data-img-src="images/gallery-churro.webp"
+                            data-img-caption="Churros con Chocolate are warm, cinnamon-dusted delights served with rich chocolate dip.">
+                            <img src="images/gallery-churro.webp"
+                                alt="Golden-brown churros dusted in cinnamon sugar with a side of rich dipping chocolate"
+                                class="gallery__image" width="600" height="400" loading="lazy">
+                            <span class="gallery__overlay" aria-hidden="true">
+                                <span class="gallery__overlay-icon">&#x2922;</span>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li class="gallery__item">
+                        <button class="gallery__trigger" aria-label="View full image: Garden patio"
+                            data-img-src="images/gallery-margarita.webp"
+                            data-img-caption="Margarita Clásica blends premium agave tequila with fresh lime and a salted rim.">
+                            <img src="images/gallery-margarita.webp"
+                                alt="A chilled Margarita Clásica served in a salt-rimmed glass with a fresh lime garnish"
+                                class="gallery__image" width="1200" height="400" loading="lazy">
+                            <span class="gallery__overlay" aria-hidden="true">
+                                <span class="gallery__overlay-icon">&#x2922;</span>
+                            </span>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+         RESERVATIONS
+    ═══════════════════════════════════════════════════════ -->
+        <section class="reservation" id="reservations" aria-labelledby="reservation-heading">
+            <div class="container reservation__container">
+
+                <div class="reservation__info">
+                    <h2 class="reservation__heading" id="reservation-heading">
+                        Join Us for<br>a Memorable Meal
+                    </h2>
+                    <span class="reservation__subtitle">Experience authentic Mexican hospitality</span>
+                    <p class="reservation__intro">
+                        We invite you to experience Vista Mexican Kitchen, a premier destination in Phoenix, AZ, where
+                        traditional roots meet modern refinement in every dish. Our space is designed for connection,
+                        celebration, and the simple joy of a shared meal. Reservations are recommended, especially on
+                        weekends, to ensure your table is ready, though walk-ins are always welcome based on
+                        availability. We look forward to hosting you and making your visit to Vista Mexican Kitchen
+                        truly exceptional.
+                    </p>
+                    <address class="reservation__address">
+                        <ul class="reservation__details" role="list">
+                            <li class="reservation__detail">
+                                <span class="reservation__detail-label">Address</span>
+                                <span class="reservation__detail-value">123 W Main Street<br>Phoenix, AZ
+                                    85004</span>
+                            </li>
+                            <li class="reservation__detail">
+                                <span class="reservation__detail-label">Hours</span>
+                                <span class="reservation__detail-value">
+                                    Mon – Thu: 11am – 9pm<br>
+                                    Fri – Sat: 11am – 11pm<br>
+                                    Sun: 12pm – 8pm
+                                </span>
+                            </li>
+                            <li class="reservation__detail">
+                                <span class="reservation__detail-label">Phone</span>
+                                <span class="reservation__detail-value">(602) 123-4567</span>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <form class="reservation__form" id="reservation-form" novalidate aria-label="Make a reservation">
+                    <div class="form-field">
+                        <label class="form-field__label" for="res-name">Full Name <span
+                                aria-hidden="true">*</span></label>
+                        <input class="form-field__input" type="text" id="res-name" name="name" required
+                            autocomplete="name" placeholder="Taylor Reed">
+                        <span class="form-field__error" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-field__label" for="res-email">Email Address <span
+                                aria-hidden="true">*</span></label>
+                        <input class="form-field__input" type="email" id="res-email" name="email" required
+                            autocomplete="email" placeholder="taylor@example.com">
+                        <span class="form-field__error" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-field__label" for="res-phone">Phone Number</label>
+                        <input class="form-field__input" type="tel" id="res-phone" name="phone" autocomplete="tel"
+                            placeholder="(512) 555-0100">
+                        <span class="form-field__error" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <div class="reservation__form-row">
+                        <div class="form-field">
+                            <label class="form-field__label" for="res-date">Date <span
+                                    aria-hidden="true">*</span></label>
+                            <input class="form-field__input" type="date" id="res-date" name="date" required>
+                            <span class="form-field__error" role="alert" aria-live="polite"></span>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field__label" for="res-time">Time <span
+                                    aria-hidden="true">*</span></label>
+                            <select class="form-field__input form-field__input--select" id="res-time" name="time"
+                                required>
+                                <option value="" disabled selected>Select a date first</option>
+                            </select>
+                            <span class="form-field__error" role="alert" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-field__label" for="res-guests">Party Size <span
+                                aria-hidden="true">*</span></label>
+                        <select class="form-field__input form-field__input--select" id="res-guests" name="guests"
+                            required>
+                            <option value="" disabled selected>How many guests?</option>
+                            <option value="1">1 guest</option>
+                            <option value="2">2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="5">5 guests</option>
+                            <option value="6">6 guests</option>
+                            <option value="7-10">7 – 10 guests</option>
+                            <option value="11+">11+ guests (large party)</option>
+                        </select>
+                        <span class="form-field__error" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-field__label" for="res-notes">Special Requests</label>
+                        <textarea class="form-field__input form-field__input--textarea" id="res-notes" name="notes"
+                            rows="3" placeholder="Allergies, dietary requirements, occasion…"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">Request Reservation</button>
+
+                    <p class="reservation__form-note">
+                        You will receive a confirmation by email within 2 hours.
+                        For same-day bookings, please call us directly.
+                    </p>
+
+                    <!-- Success state (shown via JS) -->
+                    <div class="reservation__success" id="reservation-success" aria-live="polite" hidden>
+                        <strong>&#161;Reservaci&#243;n recibida!</strong>
+                        We will confirm your table shortly. We look forward to seeing you.
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════
+       SITE FOOTER
+  ═══════════════════════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="site-footer__container">
+
+            <div class="site-footer__brand">
+                <a href="./" aria-label="Vista Mexican Kitchen — back to top">
+                    <img src="images/vista-mexican-kitchen-logo.png" alt="Vista Mexican Kitchen Logo"
+                        class="site-footer__logo">
+                </a>
+            </div>
+
+            <nav class="site-footer__nav" aria-label="Footer navigation">
+                <p class="site-footer__social-label">Quick Links</p>
+                <ul class="site-footer__nav-list" role="list">
+                    <li><a href="#about" class="site-footer__nav-link">About Us</a></li>
+                    <li><a href="#specials" class="site-footer__nav-link">Chef Specials</a></li>
+                    <li><a href="#menu" class="site-footer__nav-link">Menu</a></li>
+                    <li><a href="#happy-hour" class="site-footer__nav-link">Happy Hour</a></li>
+                    <li><a href="#gallery" class="site-footer__nav-link">Gallery</a></li>
+                    <li><a href="#reservations" class="site-footer__nav-link">Reservations</a></li>
+                </ul>
+            </nav>
+
+            <div class="site-footer__social">
+                <p class="site-footer__social-label">Contact Us</p>
+                <ul class="site-footer__social-list" role="list">
+                    <li><span class="site-footer__social-link">Instagram</span></li>
+                    <li><span class="site-footer__social-link">Facebook</span></li>
+                    <li><span class="site-footer__social-link">TikTok</span></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__newsletter">
+                <p class="site-footer__social-label">Stay in the Loop</p>
+                <p class="site-footer__newsletter-text">Get updates on specials, events, and seasonal menus.</p>
+                <form class="site-footer__newsletter-form" aria-label="Newsletter signup">
+                    <input class="site-footer__newsletter-input" type="email" placeholder="your@email.com"
+                        aria-label="Email address">
+                    <button class="site-footer__newsletter-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="site-footer__legal">
+            <p class="site-footer__copy">&copy; 2026 Vista Mexican Kitchen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════════════
+       GALLERY LIGHTBOX MODAL
+  ═══════════════════════════════════════════════════════ -->
+    <div class="modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Image lightbox" aria-hidden="true"
+        hidden>
+        <div class="modal__backdrop" id="modal-backdrop"></div>
+        <div class="modal__container">
+            <button class="modal__close" id="modal-close" aria-label="Close lightbox">&times;</button>
+            <figure class="modal__figure">
+                <img class="modal__image" id="modal-image" src="" alt="" width="1200" height="800">
+                <figcaption class="modal__caption" id="modal-caption"></figcaption>
+            </figure>
+            <div class="modal__nav" aria-label="Navigate images">
+                <button class="modal__nav-btn modal__nav-btn--prev" id="modal-prev" aria-label="Previous image">&#8592;
+                    Prev</button>
+                <button class="modal__nav-btn modal__nav-btn--next" id="modal-next" aria-label="Next image">Next
+                    &#8594;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
